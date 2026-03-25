@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>Data Description</h1>
 <section id="data-source" class="level3">
 <h3 class="anchored" data-anchor-id="data-source">Data source</h3>
-<p>My data is a subset from the U.S Airline delay dataset from Kaggle released in 2008. It had near about 2 million rows, i created my own working subset by randomly sampling around 400000 rows using python.</p>
+<p>My data is a subset from the U.S Airline delay dataset from Kaggle released in 2008. It had near about 2 million rows, i created my own working subset by randomly sampling around 40000 rows using python.</p>
 </section>
 <section id="data-description-1" class="level3">
 <h3 class="anchored" data-anchor-id="data-description-1">Data Description</h3>
@@ -92,7 +92,24 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Which causes of delay contribute thre most total delay time?</p></li>
 <li><p>Which flight routes have the worst average delays?</p></li>
 </ol>
+<p>These questions tells us when delays happen and why they happen while also giving us information regarding which routes are affected the most.</p>
 </section>
+</section>
+<section id="data-visualization" class="level1">
+<h1>Data Visualization</h1>
+<p>What do you want your final visualization to look like?</p>
+<p>Initially i opted for just bar graphs for all three questions, but after brief discussions with the professor i might have to select different visualizations for each question. I am currently in the process of choosing what visualization select from. Right now i am in the process of doing heatmap for question 3.</p>
+<p>What do you want to highlight on your final visualizations in order to answer your research questions? How do you plan to do that?</p>
+<p>I want the first question to be self explanatory, by using a simple bar graph the audience can easily see where flight delays occur. I plan on ordering it either by desc or ascending and plan on making use of gestalt principals for this. I am deciding what visualization to use for my second question but for the third question using a heat map seems like a good option as i can use different color intensities to show which routes have a higher average arrival delay.</p>
+<p>What is missing from your data or would need to change in your data to create these visualizations ?</p>
+<p>I need to convert HHMM format of time variables to hour based to make it usable for my graphs. There are also some columns that have missing values which i will deal with in the section below.</p>
+<p>#Data Cleaning</p>
+<p>Do you needd to reformat any varibles into different yes, or remove information from variable values?</p>
+<p>Yes, several variables need to be reformatted. Scheduled departure time is stored in HHMM format and would need to be converted into hour based variable.</p>
+<p>Do you need to deal with any missing data, especially missing data coded other than NA?</p>
+<p>Yes, there are some missing values in delay causes. These will be removed to keep the statistics accurate. I am intending to use na.rm = TRUE for these when calculating mean delays or total delay hours.</p>
+<p>Do you need to create any new variables? What variables? How?</p>
+<p>Yes, i will be making an hour variable from departure time by extracting hour from HHMM value. I also create a route variable by combining origin and destination airport codes.</p>
 </section>
 
 </main>

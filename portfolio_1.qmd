@@ -8,7 +8,7 @@ editor: visual
 # Data Description
 ### Data source 
 
-My data is a subset from the U.S Airline delay dataset from Kaggle released in 2008. It had near about 2 million rows, i created my own working subset by randomly sampling around 400000 rows using python.
+My data is a subset from the U.S Airline delay dataset from Kaggle released in 2008. It had near about 2 million rows, i created my own working subset by randomly sampling around 40000 rows using python.
 
 ### Data Description
 In this data, each row is one individual flight. It has information such as when the flight was scheduled, when it departed or arrived, the airports involved and different causes of the delay.
@@ -48,4 +48,18 @@ I want the first question to be self explanatory, by using a simple bar graph th
 What is missing from your data or would need to change in your data to create these visualizations ?
 
 I need to convert HHMM format of time variables to hour based to make it usable for my graphs. There are also some columns that have missing values which i will deal with in the section below.
+
+#Data Cleaning
+
+Do you needd to reformat any varibles into different yes, or remove information from variable values?
+
+Yes, several variables need to be reformatted. Scheduled departure time is stored in HHMM format and would need to be converted into hour based variable.
+
+Do you need to deal with any missing data, especially missing data coded other than NA?
+
+Yes, there are some missing values in delay causes. These will be removed to keep the statistics accurate. I am intending to use na.rm = TRUE for these when calculating mean delays or total delay hours.
+
+Do you need to create any new variables? What variables? How?
+
+Yes, i will be making an hour variable from departure time by extracting hour from HHMM value. I also create a route variable by combining origin and destination airport codes.
 
