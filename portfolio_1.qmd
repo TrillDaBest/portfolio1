@@ -48,7 +48,7 @@ These questions tells us when delays happen and why they happen while also givin
 
 What do you want your final visualization to look like?
 
-Initially i opted for just bar graphs for all three questions, but after brief discussions with the professor i might have to select different visualizations for each question. I am currently in the process of choosing what visualization select from. Right now i am in the process of doing heatmap for question 3.
+Initially i opted for just bar graphs for all three questions, but after brief discussions with the professor i might have to select different visualizations for each question. I am currently in the process of choosing what visualization to do for each question. Right now i am in the process of doing heatmap for question 3.
 
 What do you want to highlight on your final visualizations in order to answer your research questions? How do you plan to do that?
 
