@@ -5,12 +5,12 @@ format: html
 editor: visual
 ---
 
-## Data Description
-Data source 
+# Data Description
+### Data source 
 
 My data is a subset from the U.S Airline delay dataset from Kaggle released in 2008. It had near about 2 million rows, i created my own working subset by randomly sampling around 400000 rows using python.
 
-Data Description
+### Data Description
 In this data, each row is one individual flight. It has information such as when the flight was scheduled, when it departed or arrived, the airports involved and different causes of the delay.
 
 Some key variables in my project are:
@@ -23,4 +23,12 @@ WeatherDelay - Delay caused by weather ( Numeric)
 SecurityDelay - Delay Caused by Security  (NUmeric)
 LAteAirCraftDelay - Delay caused by late incoming aircraft (Numeric)
 NASDelay-  Delay caused by National Aviation System. (Numeric)
+
+# Research Questions
+### My main research questions are
+1. When do flight delays peak during the day?
+
+2. Which causes of delay contribute thre most total delay time?
+
+3. Which flight routes have the worst average delays?
 
