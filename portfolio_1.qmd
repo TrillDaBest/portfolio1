@@ -72,3 +72,9 @@ Do you need to create any new variables? What variables? How?
 
 Yes, i will be making a hour variable from departure time by extracting hour from HHMM value. I also create a route variable by combining origin and destination airport codes.
 
+
+***Library Setup***
+```{r}
+library(tidyverse)
+```
+***Data cleaning***
