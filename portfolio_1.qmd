@@ -75,7 +75,9 @@ Yes, i will be making a hour variable from departure time by extracting hour fro
 
 ***Library Setup***
 ```{r}
+#To do add captions, alt text
 library(tidyverse)
+# Reading out data
 flights <- read_csv("Data_RAW/DelayedFlights_Stat_subset.csv", show_col_types = FALSE)
 ```
 ***Data cleaning***
