@@ -77,7 +77,7 @@ Yes, i will be making a hour variable from departure time by extracting hour fro
 ```{r}
 #To do add captions, alt text
 library(tidyverse)
-# Reading out data
+# Reading data
 flights <- read_csv("Data_RAW/DelayedFlights_Stat_subset.csv", show_col_types = FALSE)
 ```
 ***Data cleaning***
@@ -98,7 +98,7 @@ flights_clean <- flights |>
     carrierdelay, weatherdelay, nasdelay,
     securitydelay, lateaircraftdelay
   ) |>
-  # Converting columns to numeric.
+  # Converting columns to numeric. # Use accross as suggested by the prof
   mutate(
     depdelay = as.numeric(depdelay),
     arrdelay = as.numeric(arrdelay),
